@@ -3,5 +3,7 @@
 "name" : "Prime Minister's Office"}
 ,
 {"id" : 2,
-"name" : "Ministry of Climate and Enterprise"}
+"name" : "Ministry of Climate and Enterprise"},
+{"id" : 3,
+"name" : "Ministry of Culture"}
 ]
