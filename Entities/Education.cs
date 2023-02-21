@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace ministers_of_sweden.api.Entities
 {
-    public class Experience
+    public class Education
     {
         public int Id { get; set; }
-        public string Description {get; set; }
-        public int YearsInPolitics {get; set;}
-        
+        public string Name { get; set; }
+        public string School {get;set;}
+        public bool Graduate {get; set;}
+
     }
 }
