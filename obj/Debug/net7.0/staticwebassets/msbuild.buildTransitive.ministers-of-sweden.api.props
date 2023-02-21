@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ministers-of-sweden.api.props" />
+</Project>
