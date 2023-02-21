@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace ministers_of_sweden.api.Entities
 {
-    public class Department
+    public class Department: BaseEntity
     {
-        public int Id { get; set; }
-        public int Name { get; set; }
+        public ICollection<Minister> Ministers {get; set;}
     }
 }

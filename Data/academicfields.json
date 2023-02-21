@@ -1,0 +1,18 @@
+[
+    {"id": 1,
+    "name" : "Science"
+},
+{"id": 2,
+    "name" : "Law"
+},
+{"id": 3,
+    "name" : "Peace and Conflict Studies"
+},
+{"id": 4,
+    "name" : "Political Science"
+},
+{"id": 5,
+    "name" : "Teaching"
+}
+
+]

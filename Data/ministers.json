@@ -1,46 +1,66 @@
 [
     {
         "id" : 1,
-        "post" : "Prime Minister",
+        "type" : "Prime Minister",
         "name" : "Ulf Kristersson",
         "born" : 1963,
         "sex" : "Male",
-        "imgurl" : "ulf-kristersson.jpg"},
-
+        "imgurl" : "ulf-kristersson.jpg",
+        "hasacademicdegree" : true,
+        "departmentid" : 1,
+        "academicfieldid" : 1,
+        "partyid" : 2
+    },
         {
         "id" : 2,
-        "post" : "Minister for EU Affairs",
+        "type" : "Minister for EU Affairs",
         "name" : "Jessica Roswall",
         "born" : 1972,
         "sex" : "Female",
-        "imgurl" : "jessica-roswall.jpg" }
-
+        "imgurl" : "jessica-roswall.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 1,
+        "academicfieldid" : 2,
+        "partyid" : 2
+        },
         {
-            "id" : 1,
-            "post" : "Prime Minister",
-            "name" : "Ulf Kristersson",
-            "born" : 1963,
-            "sex" : "Male",
-            "imgurl" : "ulf-kristersson.jpg" }
 
+            "id" : 3,
+            "type" : "Minister for Energy, Business, and Industry",
+            "name" : "Ebba Busch",
+            "born" : 1972,
+            "sex" : "Female",
+            "imgurl" : "ebba-busch.jpg" ,
+            "hasacademicdegree" : false,
+            "departmentid" : 2,
+            "academicfieldid" : 3,
+            "partyid" : 1
+            },
             {
-                "id" : 1,
-                "post" : "Prime Minister",
-                "name" : "Ulf Kristersson",
-                "born" : 1963,
-                "sex" : "Male",
-                "imgurl" : "ulf-kristersson.jpg" }
 
+                "id" : 4,
+                "type" : "Minister for Climate and the Environment ",
+                "name" : "Romina Pourmokhtari",
+                "born" : 1995,
+                "sex" : "Female",
+                "imgurl" : "ebba-busch.jpg" ,
+                "hasacademicdegree" : false,
+                "departmentid" : 3,
+                "academicfieldid" : 4,
+                "partyid" : 3
+                },
                 {
-                    "id" : 1,
-                    "post" : "Prime Minister",
-                    "name" : "Ulf Kristersson",
-                    "born" : 1963,
-                    "sex" : "Male",
-                    "imgurl" : "ulf-kristersson.jpg" }
 
+                    "id" : 5,
+                    "type" : "Minister for Culture",
+                    "name" : "Parisa Liljestrand",
+                    "born" : 1983,
+                    "sex" : "Female",
+                    "imgurl" : "romina-pourmokhtari.jpg" ,
+                    "hasacademicdegree" : true,
+                    "departmentid" : 3,
+                    "academicfieldid" : 5,
+                    "partyid" : 2
+                    }
 
-
-
-    }
-]
+                ]
