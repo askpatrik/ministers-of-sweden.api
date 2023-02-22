@@ -3,12 +3,9 @@ using ministers_of_sweden.api.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-//Konfigurera program cs klass att aktivera att använda databasen och generera DI möjlighet så vi kan använda det i controllers. 
 
 //Add database support
-
 builder.Services.AddDbContext<MinistersOfSwedenContext>(options => {
     options.UseSqlite(builder.Configuration.GetConnectionString("Sqlite"));
 });
@@ -19,6 +16,29 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//Load data into database
+
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+
+try
+{
+var context = services.GetRequiredService<MinistersOfSwedenContext>();
+
+    await context.Database.MigrateAsync();
+    await SeedData.LoadPartyData(context);
+    await SeedData.LoadDepartmentData(context);
+    await SeedData.LoadAcademicFieldsData(context);
+    await SeedData.LoadMinisterData(context);
+
+}
+catch (Exception ex)
+{
+Console.WriteLine("ex.Message");
+throw;
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
