@@ -56,25 +56,24 @@ namespace ministers_of_sweden.api.Data.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Type = table.Column<string>(type: "TEXT", nullable: true),
-                    Born = table.Column<int>(type: "INTEGER", nullable: false),
+                    Born = table.Column<string>(type: "TEXT", nullable: true),
                     Sex = table.Column<string>(type: "TEXT", nullable: true),
                     ImgUrl = table.Column<string>(type: "TEXT", nullable: true),
                     HasAcademicDegree = table.Column<bool>(type: "INTEGER", nullable: false),
                     DepartmentId = table.Column<int>(type: "INTEGER", nullable: false),
                     AcademicFieldId = table.Column<int>(type: "INTEGER", nullable: false),
-                    UniversityDegreeId = table.Column<int>(type: "INTEGER", nullable: true),
                     PartyId = table.Column<int>(type: "INTEGER", nullable: false),
-                    PartId = table.Column<int>(type: "INTEGER", nullable: true),
                     Name = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ministers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ministers_AcademicFields_UniversityDegreeId",
-                        column: x => x.UniversityDegreeId,
+                        name: "FK_Ministers_AcademicFields_AcademicFieldId",
+                        column: x => x.AcademicFieldId,
                         principalTable: "AcademicFields",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Ministers_Departments_DepartmentId",
                         column: x => x.DepartmentId,
@@ -82,11 +81,17 @@ namespace ministers_of_sweden.api.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Ministers_Parties_PartId",
-                        column: x => x.PartId,
+                        name: "FK_Ministers_Parties_PartyId",
+                        column: x => x.PartyId,
                         principalTable: "Parties",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Ministers_AcademicFieldId",
+                table: "Ministers",
+                column: "AcademicFieldId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ministers_DepartmentId",
@@ -94,14 +99,9 @@ namespace ministers_of_sweden.api.Data.Migrations
                 column: "DepartmentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ministers_PartId",
+                name: "IX_Ministers_PartyId",
                 table: "Ministers",
-                column: "PartId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Ministers_UniversityDegreeId",
-                table: "Ministers",
-                column: "UniversityDegreeId");
+                column: "PartyId");
         }
 
         /// <inheritdoc />
