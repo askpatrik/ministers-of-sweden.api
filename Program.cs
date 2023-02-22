@@ -35,7 +35,7 @@ var context = services.GetRequiredService<MinistersOfSwedenContext>();
 }
 catch (Exception ex)
 {
-Console.WriteLine("ex.Message");
+Console.WriteLine(ex.Message);
 throw;
 }
 

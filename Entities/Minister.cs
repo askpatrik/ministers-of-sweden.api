@@ -5,7 +5,7 @@ namespace ministers_of_sweden.api.Entities
     public class Minister: BaseEntity
     {
         public string Type { get; set; }
-        public string Born {get; set;}
+        public int Born {get; set;}
         public string Sex { get; set; }
         public string ImgUrl { get; set; }
         public bool HasAcademicDegree { get; set; }

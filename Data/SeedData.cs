@@ -62,7 +62,7 @@ namespace ministers_of_sweden.api.Data
                 await context.SaveChangesAsync();
             }
         }
-                 public static async Task LoadMinisterData(MinistersOfSwedenContext context)
+         public static async Task LoadMinisterData(MinistersOfSwedenContext context)
         {
            
             var options = new JsonSerializerOptions
