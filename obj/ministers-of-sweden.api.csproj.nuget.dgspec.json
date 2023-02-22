@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj": {}
+    "C:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj": {
+    "C:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj",
+        "projectUniqueName": "C:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj",
         "projectName": "ministers-of-sweden.api",
-        "projectPath": "c:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj",
+        "projectPath": "C:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\ministers-of-sweden.api.csproj",
         "packagesPath": "C:\\Users\\Patrik Ask\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\obj\\",
+        "outputPath": "C:\\Users\\Patrik Ask\\Desktop\\Inlämningsuppgift API MVC\\ministers-of-sweden.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Patrik Ask\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +53,8 @@
               "version": "[7.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
             },
