@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ministers-of-sweden.api.props" />
+</Project>
