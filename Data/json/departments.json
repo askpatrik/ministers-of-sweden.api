@@ -5,5 +5,7 @@
 {"id" : 2,
 "name" : "Ministry of Climate and Enterprise"},
 {"id" : 3,
-"name" : "Ministry of Culture"}
+"name" : "Ministry of Culture"},
+{"id" : 4,
+"name" : "Ministry of Defence"}
 ]

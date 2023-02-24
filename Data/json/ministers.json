@@ -43,7 +43,7 @@
                 "name" : "Romina Pourmokhtari",
                 "born" : 1995,
                 "sex" : "Female",
-                "imgurl" : "ebba-busch.jpg" ,
+                "imgurl" : "romina-pourmokhtari.jpg" ,
                 "hasacademicdegree" : false,
                 "departmentid" : 3,
                 "academicfieldid" : 4,
@@ -61,6 +61,20 @@
                     "departmentid" : 3,
                     "academicfieldid" : 5,
                     "partyid" : 2
-                    }
+                    },
+
+                    {
+
+                        "id" : 6,
+                        "type" : "Minister for Defence",
+                        "name" : "Pål Jonson",
+                        "born" : 1972,
+                        "sex" : "Male",
+                        "imgurl" : "pal-jonson.jpg" ,
+                        "hasacademicdegree" : true,
+                        "departmentid" : 4,
+                        "academicfieldid" : 6,
+                        "partyid" : 2
+                        }
 
                 ]
