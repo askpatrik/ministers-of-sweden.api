@@ -35,5 +35,11 @@ namespace ministers_of_sweden.api.Controllers
             return Ok(result);
             
         }
+        [HttpGet("name/{name}")]
+        public async Task<IActionResult> GetByName (string name)
+        {
+            var result = await _context.Parties.SingleOrDefaultAsync(c => c.Name == name);
+            return Ok(result);
+        }
     }
 }
