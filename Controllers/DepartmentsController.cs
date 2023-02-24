@@ -35,7 +35,8 @@ namespace ministers_of_sweden.api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _context.Departments.FindAsync(id);
+            var result = await _context.Departments
+            .FindAsync(id);
 
             return Ok(result);
         }
@@ -47,6 +48,25 @@ namespace ministers_of_sweden.api.Controllers
             var result = await _context.Departments.SingleOrDefaultAsync(c => c.Name == name);
 
             return Ok(result);
+        }
+         [HttpGet("{name}/ministers")]
+         //need hardcoded name
+        public async Task<IActionResult> ListMinistersByDepartment(string name)
+        {
+            var result = await _context.Departments
+            .Select(d => new 
+            {
+                Department = d.Name,
+                Minister = d.Ministers.Select(m => new 
+                    {
+                        Name = m.Name,
+                        PoliticalPost = m.Type
+                    }).ToList()
+            }).SingleOrDefaultAsync(c => c.Department.ToUpper() == name.ToUpper());
+          
+            
+            return Ok(result);
+
         }
 
 

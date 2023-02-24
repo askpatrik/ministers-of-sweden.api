@@ -41,5 +41,25 @@ namespace ministers_of_sweden.api.Controllers
             var result = await _context.Parties.SingleOrDefaultAsync(c => c.Name == name);
             return Ok(result);
         }
+        // http://localhost:3000/api/v1/parties/M/ministers
+        [HttpGet("{name}/ministers")]
+        public async Task<IActionResult> ListMinistersByParty(string name)
+        {
+            var result = await _context.Parties
+            .Where(c => c.Name.ToUpper().StartsWith(name.ToUpper()))
+            .Select(p => new 
+            {
+                Party = p.Name,
+                Minister = p.Ministers.Select(m => new 
+                    {
+                        Name = m.Name,
+                        PoliticalPost = m.Type
+                    }).ToList()
+            }).ToListAsync();
+          
+            
+            return Ok(result);
+
+        }
     }
 }
