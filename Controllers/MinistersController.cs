@@ -123,8 +123,14 @@ namespace ministers_of_sweden.api.Controllers
             try
             {
             await _context.Ministers.AddAsync(ministerToAdd);
-            if (await _context.SaveChangesAsync() > 0) return StatusCode(201);
-
+            if (await _context.SaveChangesAsync() > 0) 
+            
+            return CreatedAtAction(nameof(GetById), new{id = ministerToAdd.Id}, 
+            new {
+                Id = ministerToAdd.Id,
+                Name = ministerToAdd.Name,
+             
+            });
             //Nånting fel med EF core
             return StatusCode(500, "Internal Server Error");
             }
