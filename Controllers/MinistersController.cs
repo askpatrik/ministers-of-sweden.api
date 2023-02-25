@@ -118,7 +118,8 @@ namespace ministers_of_sweden.api.Controllers
                 HasAcademicDegree = minister.HasAcademicDegree,
                 academicField = academics,
                 party = politicalParty,
-                department = politicalDepartment
+                department = politicalDepartment,
+                //ImgUrl = "no-minister.jpg"
             };
             //Try catch för databasanrops-delen
 
