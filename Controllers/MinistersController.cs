@@ -13,10 +13,12 @@ namespace ministers_of_sweden.api.Controllers
     {
        
         private readonly MinistersOfSwedenContext _context;
+        private readonly string _imageBaseUrl;
 
-        public MinistersController(MinistersOfSwedenContext context)
+        public MinistersController(MinistersOfSwedenContext context, IConfiguration config)
         {
             _context = context;
+            _imageBaseUrl = config.GetSection("apiImageUrl").Value;
         }
 
         [HttpGet()]
@@ -32,7 +34,7 @@ namespace ministers_of_sweden.api.Controllers
                 Born = v.Born,    
                 Department = v.department.Name,       
                 Party = v.party.Name,         
-                ImageUrl = v.ImgUrl
+                ImageUrl = _imageBaseUrl + v.ImgUrl ?? "no-minister.jpg"
             })
            
             .ToListAsync();

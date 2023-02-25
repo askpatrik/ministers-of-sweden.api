@@ -47,6 +47,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//Det finns en wwwroot katalog
+app.UseStaticFiles();
 app.UseAuthorization();
 
 app.MapControllers();
