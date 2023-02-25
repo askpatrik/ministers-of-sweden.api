@@ -180,6 +180,38 @@ namespace ministers_of_sweden.api.Controllers
 
             return StatusCode(500, "Internal Server Error");
         }
+        [HttpPatch("{id}")]
+
+        public async Task<IActionResult> MarkFinishedAcademicDegree (int id)
+        {
+            var minister = await _context.Ministers.FindAsync(id);
+            if (minister is null) return NotFound("Minister was not found");
+
+            minister.HasAcademicDegree = true;
+
+            _context.Ministers.Update(minister);
+            if (await _context.SaveChangesAsync() > 0)
+            return NoContent();
+
+            return StatusCode(500, "Internal Server Error");
+
+
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMinister (int id)
+        {
+              var minister = await _context.Ministers.FindAsync(id);
+            if (minister is null) return NotFound("Minister was not found");
+
+            _context.Ministers.Remove(minister);
+
+           if (await _context.SaveChangesAsync() > 0)
+            return NoContent();
+
+            return StatusCode(500, "Internal Server Error");
+
+        }
+
     }
     
 }

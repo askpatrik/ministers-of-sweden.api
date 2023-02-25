@@ -68,6 +68,7 @@ namespace ministers_of_sweden.api.Controllers
             return Ok(result);
 
         }
+    
 
 
     }
