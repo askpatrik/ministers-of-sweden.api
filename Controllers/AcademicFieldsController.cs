@@ -46,5 +46,25 @@ namespace ministers_of_sweden.api.Controllers
 
             return Ok(result);
         }
+        [HttpGet("{name}/ministers")]
+        public async Task<IActionResult> GetMinistersByAcademicField(string name)
+        {
+        var result = await _context.AcademicFields
+        .Where(c => c.Name.ToUpper().StartsWith(name.ToUpper()))
+        .Select(a => new {
+            AcademicArea = a.Name,
+            Minister = a.Ministers.Select(m => new{
+
+                    Name = m.Name,
+                    MinisterType = m.Type,
+                    Sex = m.Sex
+            }
+            ).ToList()
+        })
+        .ToListAsync();
+
+        return Ok(result);
+        }
+    
     }
 }
