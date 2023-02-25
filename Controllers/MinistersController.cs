@@ -85,8 +85,11 @@ namespace ministers_of_sweden.api.Controllers
         }
 
         [HttpPost()]
+
         public async Task<IActionResult> Add(MinisterPostViewModel minister)
         {
+            if (!ModelState.IsValid) return ValidationProblem();
+
             //Kolla om ministern redan har lagts till i systemet. I API returnerar vi då ett korrekt statuskod. 
             //If-satsen säger att om c.Name är model.Name, lägg till den i C. DÅ är den inte null. 
             if (await _context.Ministers.SingleOrDefaultAsync(c => c.Name == minister.Name) is not null)         
