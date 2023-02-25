@@ -144,6 +144,42 @@ namespace ministers_of_sweden.api.Controllers
             }
          
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult>UpdateMinister(int id, MinisterUpdateModel model)
+        {
+            if (!ModelState.IsValid) return BadRequest("Wrong information");
+
+  
+            var minister = await _context.Ministers.FindAsync(id);
+            if (minister is null) return BadRequest("Minister not found, cant change");
+
+              //Hämta department, party och academic field om det stämmer överens med indatan.
+            var politicalDepartment = await _context.Departments.SingleOrDefaultAsync(c => c.Name.ToUpper() == model.Department.ToUpper());
+            if (politicalDepartment is null) return NotFound($"Could not find department named {model.Department}");
+                
+
+            var politicalParty = await _context.Parties.SingleOrDefaultAsync(c => c.Name.ToUpper() == model.Party.ToUpper());
+            if (politicalParty is null) return NotFound($"Could not find party named {model.Party}");
+
+            var academics = await _context.AcademicFields.SingleOrDefaultAsync(c => c.Name.ToUpper() == model.AcademicField.ToUpper());
+            if (academics is null) return NotFound($"Could not find academic field named {model.AcademicField}");
+
+            minister.Type = model.Type;
+            minister.Born = model.Born;
+            minister.Sex = model.Sex;
+            minister.HasAcademicDegree = model.HasAcademicDegree;
+            minister.party = politicalParty;
+            minister.department = politicalDepartment;
+            minister.academicField = academics;
+            minister.ImgUrl = string.IsNullOrEmpty(model.ImgUrl) ? "no-minister.jpg" : model.ImgUrl;
+
+            _context.Ministers.Update(minister);
+
+            if (await _context.SaveChangesAsync() > 0) return NoContent();
+
+            return StatusCode(500, "Internal Server Error");
+        }
     }
     
 }
