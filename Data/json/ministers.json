@@ -136,20 +136,9 @@
         "academicfieldid" : 2,
         "partyid" : 3
     },
+   
     {
         "id" : 12,
-        "type" : "Minister for Gender Equality and Deputy",
-        "name" : "Paulina Brandberg",
-        "born" : 1983,
-        "sex" : "Female",
-        "imgurl" : "paulina-brandberg.jpg" ,
-        "hasacademicdegree" : true,
-        "departmentid" : 6,
-        "academicfieldid" : 2,
-        "partyid" : 3
-    },
-    {
-        "id" : 13,
         "type" : "Minister for Finance",
         "name" : "Elisabeth Svantesson",
         "born" : 1967,
@@ -161,7 +150,7 @@
         "partyid" : 2
     },
     {
-        "id" : 14,
+        "id" : 13,
         "type" : "Minister for Public Administration",
         "name" : "Erik Slottner",
         "born" : 1980,
@@ -173,7 +162,7 @@
         "partyid" : 1
     },
     {
-        "id" : 15,
+        "id" : 14,
         "type" : "Minister for Financial Markets",
         "name" : "Niklas Wykman",
         "born" : 1981,
@@ -185,7 +174,7 @@
         "partyid" : 2
     },
     {
-        "id" : 16,
+        "id" : 15,
         "type" : "Minister for Foreign Affairs",
         "name" : "Tobias Billström",
         "born" : 1973,
@@ -197,7 +186,7 @@
         "partyid" : 2
     },
     {
-        "id" : 17,
+        "id" : 16,
         "type" : "Minister for International Development Cooperation and Foreign Trade",
         "name" : "Johan Forssell",
         "born" : 1979,
@@ -209,7 +198,7 @@
         "partyid" : 2
     },
     {
-        "id" : 18,
+        "id" : 17,
         "type" : "Minister for Social Affairs and Public Health",
         "name" : "Jakob Forssmed",
         "born" : 1974,
@@ -221,7 +210,7 @@
         "partyid" : 1
     },
     {
-        "id" : 19,
+        "id" : 18,
         "type" : "Minister for Health Care",
         "name" : "Acko Ankarberg Johansson",
         "born" : 1964,
@@ -233,7 +222,7 @@
         "partyid" : 1
     },
     {
-        "id" : 20,
+        "id" : 19,
         "type" : "Minister for Older People and Social Security",
         "name" : "Anna Tenje",
         "born" : 1977,
@@ -245,7 +234,7 @@
         "partyid" : 2
     },
     {
-        "id" : 21,
+        "id" : 20,
         "type" : "Minister for Social Services",
         "name" : "Camilla Waltersson Grönvall",
         "born" : 1969,
@@ -257,7 +246,7 @@
         "partyid" : 2
     },
     {
-        "id" : 22,
+        "id" : 21,
         "type" : "Minister for Justice",
         "name" : "Gunnar Strömmer",
         "born" : 1972,
@@ -269,7 +258,7 @@
         "partyid" : 2
     },
     {
-        "id" : 23,
+        "id" : 22,
         "type" : "Minister for Migration",
         "name" : "Maria Malmer Stenergard",
         "born" : 1981,
@@ -281,7 +270,7 @@
         "partyid" : 2
     },
     {
-        "id" : 24,
+        "id" : 23,
         "type" : "Minister for Rural Affairs",
         "name" : "Peter Kullgren",
         "born" : 1981,
@@ -293,7 +282,7 @@
         "partyid" : 1
     },
     {
-        "id" : 25,
+        "id" : 24,
         "type" : "Minister for Infrastructure and Housing",
         "name" : "Andreas Carlson",
         "born" : 1987,
