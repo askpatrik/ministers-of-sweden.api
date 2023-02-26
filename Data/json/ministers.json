@@ -11,7 +11,7 @@
         "academicfieldid" : 1,
         "partyid" : 2
     },
-        {
+    {
         "id" : 2,
         "type" : "Minister for EU Affairs",
         "name" : "Jessica Roswall",
@@ -22,59 +22,288 @@
         "departmentid" : 1,
         "academicfieldid" : 2,
         "partyid" : 2
-        },
-        {
+    },
+    {
 
-            "id" : 3,
-            "type" : "Minister for Energy, Business, and Industry",
-            "name" : "Ebba Busch",
-            "born" : 1972,
-            "sex" : "Female",
-            "imgurl" : "ebba-busch.jpg" ,
-            "hasacademicdegree" : false,
-            "departmentid" : 2,
-            "academicfieldid" : 3,
-            "partyid" : 1
-            },
-            {
+        "id" : 3,
+        "type" : "Minister for Energy, Business, and Industry",
+        "name" : "Ebba Busch",
+        "born" : 1972,
+        "sex" : "Female",
+        "imgurl" : "ebba-busch.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 2,
+        "academicfieldid" : 3,
+        "partyid" : 1
+    },
+    {
 
-                "id" : 4,
-                "type" : "Minister for Climate and the Environment ",
-                "name" : "Romina Pourmokhtari",
-                "born" : 1995,
-                "sex" : "Female",
-                "imgurl" : "romina-pourmokhtari.jpg" ,
-                "hasacademicdegree" : false,
-                "departmentid" : 3,
-                "academicfieldid" : 4,
-                "partyid" : 3
-                },
-                {
+        "id" : 4,
+        "type" : "Minister for Climate and the Environment ",
+        "name" : "Romina Pourmokhtari",
+        "born" : 1995,
+        "sex" : "Female",
+        "imgurl" : "romina-pourmokhtari.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 3,
+        "academicfieldid" : 4,
+        "partyid" : 3
+    },
+    {
 
-                    "id" : 5,
-                    "type" : "Minister for Culture",
-                    "name" : "Parisa Liljestrand",
-                    "born" : 1983,
-                    "sex" : "Female",
-                    "imgurl" : "parisa-liljestrand.jpg" ,
-                    "hasacademicdegree" : true,
-                    "departmentid" : 3,
-                    "academicfieldid" : 5,
-                    "partyid" : 2
-                    },
+        "id" : 5,
+        "type" : "Minister for Culture",
+        "name" : "Parisa Liljestrand",
+        "born" : 1983,
+        "sex" : "Female",
+        "imgurl" : "parisa-liljestrand.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 3,
+        "academicfieldid" : 5,
+        "partyid" : 2
+    },
 
-                    {
+    {
 
-                        "id" : 6,
-                        "type" : "Minister for Defence",
-                        "name" : "Pål Jonson",
-                        "born" : 1972,
-                        "sex" : "Male",
-                        "imgurl" : "pal-jonson.jpg" ,
-                        "hasacademicdegree" : true,
-                        "departmentid" : 4,
-                        "academicfieldid" : 6,
-                        "partyid" : 2
-                        }
+        "id" : 6,
+        "type" : "Minister for Defence",
+        "name" : "Pål Jonson",
+        "born" : 1972,
+        "sex" : "Male",
+        "imgurl" : "pal-jonson.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 4,
+        "academicfieldid" : 6,
+        "partyid" : 2
+    },
+    {
+        "id" : 7,
+        "type" : "Minister for Civil Defence",
+        "name" : "Carl-Oskar Bohlin",
+        "born" : 1986,
+        "sex" : "Male",
+        "imgurl" : "carl-oscar-bohlin.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 4,
+        "academicfieldid" : 2,
+        "partyid" : 2
+    },
+    {
+        "id" : 8,
+        "type" : "Minister for Education",
+        "name" : "Mats Persson",
+        "born" : 1980,
+        "sex" : "Male",
+        "imgurl" : "mats-persson.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 5,
+        "academicfieldid" : 7,
+        "partyid" : 3
+    },
+    {
+        "id" : 9,
+        "type" : "Minister for Schools",
+        "name" : "Lotta Edholm",
+        "born" : 1965,
+        "sex" : "Female",
+        "imgurl" : "lotta-edholm.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 5,
+        "academicfieldid" : 4,
+        "partyid" : 3
+    },
+    {
+        "id" : 10,
+        "type" : "Minister for Employment and Integration",
+        "name" : "Johan Pehrson",
+        "born" : 1968,
+        "sex" : "Male",
+        "imgurl" : "johan-pehrson.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 6,
+        "academicfieldid" : 2,
+        "partyid" : 3
+    },
+    {
+        "id" : 11,
+        "type" : "Minister for Gender Equality and Deputy",
+        "name" : "Paulina Brandberg",
+        "born" : 1983,
+        "sex" : "Female",
+        "imgurl" : "paulina-brandberg.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 6,
+        "academicfieldid" : 2,
+        "partyid" : 3
+    },
+    {
+        "id" : 12,
+        "type" : "Minister for Gender Equality and Deputy",
+        "name" : "Paulina Brandberg",
+        "born" : 1983,
+        "sex" : "Female",
+        "imgurl" : "paulina-brandberg.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 6,
+        "academicfieldid" : 2,
+        "partyid" : 3
+    },
+    {
+        "id" : 13,
+        "type" : "Minister for Finance",
+        "name" : "Elisabeth Svantesson",
+        "born" : 1967,
+        "sex" : "Female",
+        "imgurl" : "elisabeth-svantesson.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 7,
+        "academicfieldid" : 8,
+        "partyid" : 2
+    },
+    {
+        "id" : 14,
+        "type" : "Minister for Public Administration",
+        "name" : "Erik Slottner",
+        "born" : 1980,
+        "sex" : "Male",
+        "imgurl" : "elisabeth-svantesson.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 7,
+        "academicfieldid" : 4,
+        "partyid" : 1
+    },
+    {
+        "id" : 15,
+        "type" : "Minister for Financial Markets",
+        "name" : "Niklas Wykman",
+        "born" : 1981,
+        "sex" : "Male",
+        "imgurl" : "niklas-wykman.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 7,
+        "academicfieldid" : 8,
+        "partyid" : 2
+    },
+    {
+        "id" : 16,
+        "type" : "Minister for Foreign Affairs",
+        "name" : "Tobias Billström",
+        "born" : 1973,
+        "sex" : "Male",
+        "imgurl" : "tobias-billstrom.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 8,
+        "academicfieldid" : 9,
+        "partyid" : 2
+    },
+    {
+        "id" : 17,
+        "type" : "Minister for International Development Cooperation and Foreign Trade",
+        "name" : "Johan Forssell",
+        "born" : 1979,
+        "sex" : "Male",
+        "imgurl" : "johan-forssell.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 8,
+        "academicfieldid" : 8,
+        "partyid" : 2
+    },
+    {
+        "id" : 18,
+        "type" : "Minister for Social Affairs and Public Health",
+        "name" : "Jakob Forssmed",
+        "born" : 1974,
+        "sex" : "Male",
+        "imgurl" : "jakob-forssmed.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 9,
+        "academicfieldid" : 4,
+        "partyid" : 1
+    },
+    {
+        "id" : 19,
+        "type" : "Minister for Health Care",
+        "name" : "Acko Ankarberg Johansson",
+        "born" : 1964,
+        "sex" : "Female",
+        "imgurl" : "acko-ankarberg-johansson.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 9,
+        "academicfieldid" : null,
+        "partyid" : 1
+    },
+    {
+        "id" : 20,
+        "type" : "Minister for Older People and Social Security",
+        "name" : "Anna Tenje",
+        "born" : 1977,
+        "sex" : "Female",
+        "imgurl" : "anna-tenje.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 9,
+        "academicfieldid" : 4,
+        "partyid" : 2
+    },
+    {
+        "id" : 21,
+        "type" : "Minister for Social Services",
+        "name" : "Camilla Waltersson Grönvall",
+        "born" : 1969,
+        "sex" : "Female",
+        "imgurl" : "camilla-waltersson-gronvall.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 9,
+        "academicfieldid" : 5,
+        "partyid" : 2
+    },
+    {
+        "id" : 22,
+        "type" : "Minister for Justice",
+        "name" : "Gunnar Strömmer",
+        "born" : 1972,
+        "sex" : "Male",
+        "imgurl" : "gunnar-strommer.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 11,
+        "academicfieldid" : 2,
+        "partyid" : 2
+    },
+    {
+        "id" : 23,
+        "type" : "Minister for Migration",
+        "name" : "Maria Malmer Stenergard",
+        "born" : 1981,
+        "sex" : "Female",
+        "imgurl" : "maria-malmer-stenergard.jpg" ,
+        "hasacademicdegree" : true,
+        "departmentid" : 11,
+        "academicfieldid" : 2,
+        "partyid" : 2
+    },
+    {
+        "id" : 24,
+        "type" : "Minister for Rural Affairs",
+        "name" : "Peter Kullgren",
+        "born" : 1981,
+        "sex" : "Male",
+        "imgurl" : "peter-kullgren.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 10,
+        "academicfieldid" : null,
+        "partyid" : 1
+    },
+    {
+        "id" : 25,
+        "type" : "Minister for Infrastructure and Housing",
+        "name" : "Andreas Carlson",
+        "born" : 1987,
+        "sex" : "Male",
+        "imgurl" : "andreas-carlson.jpg" ,
+        "hasacademicdegree" : false,
+        "departmentid" : 10,
+        "academicfieldid" : 2,
+        "partyid" : 1
+    }
+
 
                 ]

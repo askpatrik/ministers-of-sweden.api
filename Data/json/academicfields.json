@@ -16,6 +16,15 @@
 },
 {"id": 6,
     "name" : "War"
+},
+{"id": 7,
+    "name" : "Economic History"
+},
+{"id": 8,
+    "name" : "Finance"
+},
+{"id": 9,
+    "name" : "History"
 }
 
 ]

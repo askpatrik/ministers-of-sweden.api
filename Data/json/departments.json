@@ -7,5 +7,19 @@
 {"id" : 3,
 "name" : "Ministry of Culture"},
 {"id" : 4,
-"name" : "Ministry of Defence"}
+"name" : "Ministry of Defence"},
+{"id" : 5,
+"name" : "Ministry of Education and Research"},
+{"id" : 6,
+"name" : "Ministry of Employment"},
+{"id" : 7,
+"name" : "Ministry of Finance"},
+{"id" : 8,
+"name" : "Ministry of Foreign Affairs"},
+{"id" : 9,
+"name" : "Ministry of Health and Social Affairs"},
+{"id" : 10,
+"name" : "Ministry of Rural Affairs and Infrastructure"},
+{"id" : 11,
+"name" : "Ministry of Justice"}
 ]
