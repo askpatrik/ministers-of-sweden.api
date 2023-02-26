@@ -28,10 +28,10 @@ namespace ministers_of_sweden.api.Controllers
 
             var result = await _context.Ministers
             .Select(v => new {
-                Identitet = v.Id,
+                Id = v.Id,
                 Minister = v.Type,
                 Name = v.Name,
-                Born = v.Born,    
+                BirthYear = v.Born,    
                 Department = v.department.Name,       
                 Party = v.party.Name,         
                 ImageUrl = _imageBaseUrl + v.ImgUrl ?? "no-minister.jpg"
