@@ -10,7 +10,7 @@ using ministers_of_sweden.api.Data;
 namespace ministers_of_sweden.api.Data.Migrations
 {
     [DbContext(typeof(MinistersOfSwedenContext))]
-    [Migration("20230222192923_InitialCreate")]
+    [Migration("20230226211349_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -56,8 +56,8 @@ namespace ministers_of_sweden.api.Data.Migrations
                     b.Property<int>("AcademicFieldId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Born")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Born")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("INTEGER");

@@ -218,7 +218,7 @@
         "imgurl" : "acko-ankarberg-johansson.jpg" ,
         "hasacademicdegree" : false,
         "departmentid" : 9,
-        "academicfieldid" : null,
+        "academicfieldid" : 1,
         "partyid" : 1
     },
     {
@@ -278,7 +278,7 @@
         "imgurl" : "peter-kullgren.jpg" ,
         "hasacademicdegree" : false,
         "departmentid" : 10,
-        "academicfieldid" : null,
+        "academicfieldid" : 1,
         "partyid" : 1
     },
     {

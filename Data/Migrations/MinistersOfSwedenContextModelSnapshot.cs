@@ -27,7 +27,7 @@ namespace ministers_of_sweden.api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AcademicFields", (string)null);
+                    b.ToTable("AcademicFields");
                 });
 
             modelBuilder.Entity("ministers_of_sweden.api.Entities.Department", b =>
@@ -41,7 +41,7 @@ namespace ministers_of_sweden.api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments", (string)null);
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("ministers_of_sweden.api.Entities.Minister", b =>
@@ -53,8 +53,8 @@ namespace ministers_of_sweden.api.Data.Migrations
                     b.Property<int>("AcademicFieldId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Born")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Born")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("INTEGER");
@@ -85,7 +85,7 @@ namespace ministers_of_sweden.api.Data.Migrations
 
                     b.HasIndex("PartyId");
 
-                    b.ToTable("Ministers", (string)null);
+                    b.ToTable("Ministers");
                 });
 
             modelBuilder.Entity("ministers_of_sweden.api.Entities.Party", b =>
@@ -99,7 +99,7 @@ namespace ministers_of_sweden.api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Parties", (string)null);
+                    b.ToTable("Parties");
                 });
 
             modelBuilder.Entity("ministers_of_sweden.api.Entities.Minister", b =>

@@ -56,7 +56,7 @@ namespace ministers_of_sweden.api.Data.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Type = table.Column<string>(type: "TEXT", nullable: true),
-                    Born = table.Column<string>(type: "TEXT", nullable: true),
+                    Born = table.Column<int>(type: "INTEGER", nullable: false),
                     Sex = table.Column<string>(type: "TEXT", nullable: true),
                     ImgUrl = table.Column<string>(type: "TEXT", nullable: true),
                     HasAcademicDegree = table.Column<bool>(type: "INTEGER", nullable: false),
