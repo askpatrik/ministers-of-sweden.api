@@ -10,7 +10,7 @@ using ministers_of_sweden.api.Data;
 namespace ministers_of_sweden.api.Data.Migrations
 {
     [DbContext(typeof(MinistersOfSwedenContext))]
-    [Migration("20230226211349_InitialCreate")]
+    [Migration("20230226213809_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

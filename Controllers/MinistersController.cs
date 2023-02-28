@@ -51,14 +51,15 @@ namespace ministers_of_sweden.api.Controllers
             .Select(v => new 
             {
                 ID = v.Id,
-                PoliticalPost = v.Type,
+                Type = v.Type,
                 Name = v.Name,
                 Born = v.Born,    
                 Sex = v.Sex,
                 HasAcademicDegree = v.HasAcademicDegree,
+                AcademicField = v.academicField.Name,
                 Department = v.department.Name,       
                 Party = v.party.Name,         
-                ImageUrl = v.ImgUrl
+                ImageUrl = _imageBaseUrl + v.ImgUrl ?? "no-minister.jpg"
             })
             .SingleOrDefaultAsync(c => c.ID == id);
 
@@ -86,7 +87,7 @@ namespace ministers_of_sweden.api.Controllers
             return Ok(result);
         }
 
-        [HttpPost()]
+        [HttpGet("add")]
 
         public async Task<IActionResult> Add(MinisterPostViewModel minister)
         {
