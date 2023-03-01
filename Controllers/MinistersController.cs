@@ -34,7 +34,7 @@ namespace ministers_of_sweden.api.Controllers
                 Born = v.Born,    
                 Department = v.department.Name,       
                 Party = v.party.Name,         
-                ImageUrl = _imageBaseUrl + v.ImgUrl ?? "no-minister.jpg"
+                ImageUrl = _imageBaseUrl + v.ImgUrl ?? "no-minister.png"
             })
            
             .ToListAsync();
@@ -87,9 +87,8 @@ namespace ministers_of_sweden.api.Controllers
             return Ok(result);
         }
 
-        [HttpGet("add")]
-
-        public async Task<IActionResult> Add(MinisterPostViewModel minister)
+        [HttpPost()]
+        public async Task<IActionResult> PostNewMinister(MinisterPostViewModel minister)
         {
             if (!ModelState.IsValid) return ValidationProblem();
 
@@ -120,7 +119,7 @@ namespace ministers_of_sweden.api.Controllers
                 academicField = academics,
                 party = politicalParty,
                 department = politicalDepartment,
-                //ImgUrl = "no-minister.jpg"
+                ImgUrl = "no-minister.png"
             };
             //Try catch för databasanrops-delen
 
@@ -201,7 +200,7 @@ namespace ministers_of_sweden.api.Controllers
 
 
         }
-        [HttpGet("delete/{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteMinister (int id)
         {
               var minister = await _context.Ministers.FindAsync(id);
