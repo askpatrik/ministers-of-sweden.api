@@ -203,8 +203,13 @@ namespace ministers_of_sweden.api.Controllers
         [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteMinister (int id)
         {
-              var minister = await _context.Ministers.FindAsync(id);
+
+
+            var minister = await _context.Ministers.FindAsync(id);
+         
             if (minister is null) return NotFound("Minister was not found");
+
+            
 
             _context.Ministers.Remove(minister);
 
