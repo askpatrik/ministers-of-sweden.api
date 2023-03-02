@@ -119,7 +119,7 @@ namespace ministers_of_sweden.api.Controllers
                 academicField = academics,
                 party = politicalParty,
                 department = politicalDepartment,
-                ImgUrl = "no-minister.png"
+                ImgUrl = "no-minister.jpg"
             };
             //Try catch för databasanrops-delen
 

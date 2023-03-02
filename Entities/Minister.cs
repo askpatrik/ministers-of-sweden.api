@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ministers_of_sweden.api.Entities
 {
@@ -22,6 +23,8 @@ namespace ministers_of_sweden.api.Entities
         public int PartyId {get; set;}
         [ForeignKey("PartyId")]
         public Party party {get; set;}
+
+       
 
 
     }
